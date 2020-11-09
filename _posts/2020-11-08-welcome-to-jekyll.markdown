@@ -2,19 +2,17 @@
 layout: single
 title:  "Introduction"
 ---
+Xanadu is a WIP *roguelite* platformer inspired by games such as *Spelunky* and *Rogue Legacy*. 
 
+## Technology
 
-This is some text, this is a sample of test. **Emphasis** on that text, *italic* text.
+Xanadu is built with **LibGDX** in Kotlin, using the **Ashley** Entity-Component-System framework. 
 
-#### Subtitle
+## Building the game
 
-Ok a little title
+The project uses the Gradle build system. Simply importing the project in **IntelliJ** and launching the game via **DesktopLauncher** should be enough.
 
-#### Another title
+### Deploying
 
-| Name               | Price  | Description                                                  |
-| ------------------ | ------ | ------------------------------------------------------------ |
-| Some Data          | 13.99$ | This is a long description with some text to see how a table will show up |
-| Another data point | 10.00$ | Some more text.                                              |
-|                    |        |                                                              |
+//TBD
 
