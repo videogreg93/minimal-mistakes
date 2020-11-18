@@ -66,7 +66,7 @@ The final piece of the puzzle is the `get` extension function, which lets us obt
 
 ```kotlin
 fun <T> AssetDescriptor<T>.get(): T {
-    return MainContext.inject<AssetManager>().assetManager.get(this)
+    return assetManager.get(this)
 }
 ```
 
@@ -84,7 +84,6 @@ import org.reflections.Reflections
 import com.badlogic.gdx.assets.AssetManager as GdxAssetManager
 
 class AssetManager {
-    private val assetManager: GdxAssetManager = GdxAssetManager()
 
     init {
         assetManager.registerFreeTypeFontLoaders()
@@ -118,8 +117,10 @@ class AssetManager {
     }
 
     companion object {
+        private val assetManager: GdxAssetManager = GdxAssetManager()
+        
         fun <T> AssetDescriptor<T>.get(): T {
-            return MainContext.inject<AssetManager>().assetManager.get(this)
+            return assetManager.get(this)
         }
     }
 }
