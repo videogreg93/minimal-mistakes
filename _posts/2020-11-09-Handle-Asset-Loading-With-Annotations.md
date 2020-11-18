@@ -1,3 +1,9 @@
+---
+
+tags: "LibGDX LibKTX"
+
+---
+
 The **AssetManager** handles loading and unloading various assets such as *Textures* and *Sounds*. Rather than loading them on use, you can use the Asset Manager to load all necessary assets at game launch, or at the beginning of a level. It also serves as a central point for all assets, making it easier to avoid reimporting the same asset multiple times.
 
 ```kotlin

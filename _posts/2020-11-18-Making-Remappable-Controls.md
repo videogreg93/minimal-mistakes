@@ -1,3 +1,9 @@
+---
+
+tags: "LibGDX LibKTX"
+
+---
+
 Enabling remappable controls in your game is as simple as decoupling the player's input from the actual action that they want to preform with said input. Let's start by taking a look at a standard implementation of handling input in **LibGDX**, with the help of [LibKTX](https://github.com/libktx/ktx).
 
 ```kotlin
